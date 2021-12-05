@@ -1,9 +1,3 @@
-// получение ip
-// let ip;
-// $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-//         ip = data['geoplugin_request'];
-// });
-
 const ip = "01";
 
 // расположение враппера по центру
