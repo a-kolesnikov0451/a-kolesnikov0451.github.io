@@ -1,8 +1,10 @@
 // получение ip
-let ip;
-$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-        ip = data['geoplugin_request'];
-});
+// let ip;
+// $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+//         ip = data['geoplugin_request'];
+// });
+
+const ip = "0";
 
 // расположение враппера по центру
 function marginWrapper() {
@@ -14,6 +16,7 @@ function marginWrapper() {
     const marginValue = (screenHeight / 2) - (wrapperHeight / 2) - 50;
 
     wrapper.style.marginTop = marginValue + 'px';
+    alert(marginValue);
 };
 marginWrapper();
 
@@ -27,7 +30,6 @@ function changeText() {
         text.innerHTML = "Ты красавчик."
     } else {
         text.innerHTML = "Ты петух."
-        console.log(ip);
     };
     marginWrapper();
 };
