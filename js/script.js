@@ -27,6 +27,7 @@ function changeText() {
         text.innerHTML = "Ты красавчик."
     } else {
         text.innerHTML = "Ты петух."
+        console.log(ip);
     };
     marginWrapper();
 };
