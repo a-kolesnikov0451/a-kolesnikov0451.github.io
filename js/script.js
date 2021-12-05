@@ -4,7 +4,7 @@
 //         ip = data['geoplugin_request'];
 // });
 
-const ip = "0";
+const ip = "01";
 
 // расположение враппера по центру
 function marginWrapper() {
