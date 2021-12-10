@@ -89,4 +89,8 @@
     .slider-box svg {
         margin: 0 auto;
     }
+    .info-slider {
+        padding-top: 10px;
+        font-size: 35px;
+    }
 }
