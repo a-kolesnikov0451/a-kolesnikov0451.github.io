@@ -8,9 +8,9 @@ breakPoint = value * width;
 let offset = 0;
 
 $(".next").click(function() {
-    $(".info").slideUp();
-    if (!$(".info").hasClass("hide")) {
-        $(".info").addClass("hide");
+    $(".info-slider").slideUp();
+    if (!$(".info-slider").hasClass("hide")) {
+        $(".info-slider").addClass("hide");
     };
     offset += width;
     if (offset >= breakPoint) {
@@ -21,9 +21,9 @@ $(".next").click(function() {
 
 
 $(".prev").click(function() {
-    $(".info").slideUp();
-    if (!$(".info").hasClass("hide")) {
-        $(".info").addClass("hide");
+    $(".info-slider").slideUp();
+    if (!$(".info-slider").hasClass("hide")) {
+        $(".info-slider").addClass("hide");
     };
     offset -= width;
     if (offset < 0) {
@@ -33,19 +33,19 @@ $(".prev").click(function() {
 });
 
 $(".slider").click(function() {
-    if ($(".info").hasClass("hide")){
+    if ($(".info-slider").hasClass("hide")){
         let imgs = sliderLine.querySelectorAll("img");
 
         if (imgs[offset / width].alt === ""){
-            $(".info").html("Сайт Bilook©");
+            $(".info-slider").html("Сайт Bilook©");
         } else {
-            $(".info").html(imgs[offset / width].alt);
+            $(".info-slider").html(imgs[offset / width].alt);
         };
 
-        $(".info").slideDown();
-        $(".info").toggleClass("hide");
+        $(".info-slider").slideDown();
+        $(".info-slider").toggleClass("hide");
     } else {
-        $(".info").slideUp();
-        $(".info").toggleClass("hide");
+        $(".info-slider").slideUp();
+        $(".info-slider").toggleClass("hide");
     };
 });

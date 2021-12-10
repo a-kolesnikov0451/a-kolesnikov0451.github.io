@@ -67,12 +67,12 @@
     transform: scale(-1, 1);
 }
 
-.slider-box .info {
+.info-slider {
     width: var(--width);
     height: 50px;
     background-color: rgb(223, 14, 116, 0.5);
 
-    margin: 20px auto;
+    margin: 20px 0;
 
     text-align: center;
     padding-top: 25px;
