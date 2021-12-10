@@ -69,13 +69,14 @@
 
 .info-slider {
     width: var(--width);
-    height: 50px;
+    height: fit-content;
     background-color: rgb(223, 14, 116, 0.5);
 
     margin: 20px 0;
 
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 
@@ -90,7 +91,6 @@
         margin: 0 auto;
     }
     .info-slider {
-        padding-top: 10px;
         font-size: 35px;
     }
 }
