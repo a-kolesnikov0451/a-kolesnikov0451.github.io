@@ -81,3 +81,12 @@
 
     cursor: default;
 }
+
+@media (max-width: 500px) {
+    .slider-box .prev, .slider-box .next {
+        width: 70px;
+    }
+    .slider-box svg {
+        margin: 0 auto;
+    }
+}
