@@ -1,6 +1,6 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     document.location.href = "https://github.com/zerobias/telegram-mtproto";
-};
+});
 
 const value = $(".slider-line").children("img").length;
 const sliderLine = document.querySelector(".slider-line");
